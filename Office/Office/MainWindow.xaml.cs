@@ -26,9 +26,9 @@ namespace Office {
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
             List<Office> Rooms = new List<Office>();
-            Rooms.Add(new Office { Name = "이지원", Width = 10, Height = 10, Area = 100, Tiles = 10 });
-            Rooms.Add(new Office { Name = "김동휘", Width = 20, Height = 10, Area = 100, Tiles = 10 });
-            Rooms.Add(new Office { Name = "박연택", Width = 30, Height = 10, Area = 100, Tiles = 10 });
+            Rooms.Add(new Office { Name = "사무실1", Width = 10, Height = 10, myRectangle = Office1});
+            Rooms.Add(new Office { Name = "사무실2", Width = 20, Height = 20, myRectangle = Office2 });
+            Rooms.Add(new Office { Name = "사무실3", Width = 30, Height = 30, myRectangle = Office3 });
 
             OfficeList.ItemsSource = Rooms;
         }
