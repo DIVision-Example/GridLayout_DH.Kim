@@ -22,70 +22,7 @@ namespace Office {
     /// </summary>
     /// 
 
-    /*
-    public class Space {
-        public TextBlock Room;  // obj
-
-        public int Width {
-            get {
-                return (int)Room.ActualWidth;
-            }
-        }
-        public int Height {
-            get {
-                return (int)Room.ActualHeight;
-            }
-        }
-
-        public string Name {
-            get {
-                return Room.Text;
-            }
-        }
-        public int TileCount { 
-            get {
-                return Tile.GetCount(Width, Height);
-            }
-        }
-
-        // Constructor
-        public Space(TextBlock space) {
-            this.Room = space;
-        }
-    }
-
-    public class Tile {
-        public int Width;
-        public int Height;
-
-        static public int GetCount(int width, int height) {
-            // 계산하는 로직 출력
-            return 0;
-        }
-    }
-    */
-
-    public partial class MainWindow : Window {
-        /*
-        ObservableCollection<Space> Rooms { get; set; }
-        public MainWindow() {
-            InitializeComponent();
-
-            Rooms = new ObservableCollection<Space> {
-                new Space(Office1),
-                new Space(Office2),
-                new Space(Office3)
-            };
-
-        }
-        */
-        
-        private void refresh() {
-        }
-
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e) {
-            refresh();
-        }
+    public partial class MainWindow : Window {        
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
             List<Office> Rooms = new List<Office>();
