@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aweso\\Desktop\\Project\\Office\\Office\\Office.csproj": {}
+    "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\Office.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aweso\\Desktop\\Project\\Office\\Office\\Office.csproj": {
+    "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\Office.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aweso\\Desktop\\Project\\Office\\Office\\Office.csproj",
+        "projectUniqueName": "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\Office.csproj",
         "projectName": "Office",
-        "projectPath": "C:\\Users\\aweso\\Desktop\\Project\\Office\\Office\\Office.csproj",
+        "projectPath": "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\Office.csproj",
         "packagesPath": "C:\\Users\\aweso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aweso\\Desktop\\Project\\Office\\Office\\obj\\",
+        "outputPath": "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

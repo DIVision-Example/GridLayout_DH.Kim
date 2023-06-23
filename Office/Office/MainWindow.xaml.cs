@@ -18,7 +18,7 @@ using System.Configuration;
 
 namespace Office {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainWindow.xaml 홍길동
     /// </summary>
     /// 
     public class Space {
