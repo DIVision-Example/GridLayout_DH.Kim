@@ -36,9 +36,9 @@ namespace Office {
 
     public class Office {
         public string Name { get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public int Area { get; set; }
-        public int Tiles { get; set; }
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public double Area { get; set; }
+        public Rectangle myRectangle;
     }
 }
