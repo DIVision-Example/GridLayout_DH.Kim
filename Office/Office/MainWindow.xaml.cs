@@ -22,21 +22,6 @@ namespace Office {
     /// </summary>
     /// 
 
-
-    public class Data {
-        public string Name { get; set; }
-        public string Id { get; set; }
-        public string Major { get; set; }
-        public int Grade { get; set; }
-        public string Etc { get; set; }
-    }
-
-
-
-
-
-
-
     public class Space {
         public TextBlock Room;  // obj
 
@@ -100,11 +85,17 @@ namespace Office {
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
             List<Data> list = new List<Data>();
-            list.Add(new Data { name = "이지원", id = "210651", major = "컴퓨터공학", grade = 1, etc = "" });
-            list.Add(new Data { name = "김현호", id = "210184", major = "컴퓨터공학", grade = 1, etc = "" });
-            list.Add(new Data { name = "강희진", id = "123141", major = "컴퓨터공학", grade = 1, etc = "" });
-            list.Add(new Data { name = "박서준", id = "001293", major = "컴퓨터공학", grade = 1, etc = "" });
-            list.Add(new Data { name = "강나연", id = "519232", major = "컴퓨터공학", grade = 1, etc = "" });
+            list.Add(new Data { Name = "이지원", Width = 10, Height = 10, Area = 100, Tiles = 10 });
+            list.Add(new Data { Name = "김동휘", Width = 20, Height = 10, Area = 100, Tiles = 10 });
+            list.Add(new Data { Name = "박연택", Width = 30, Height = 10, Area = 100, Tiles = 10 });
         }
+    }
+
+    public class Data {
+        public string Name { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public int Area { get; set; }
+        public int Tiles { get; set; }
     }
 }
