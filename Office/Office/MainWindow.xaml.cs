@@ -24,11 +24,11 @@ namespace Office {
 
 
     public class Data {
-        public string name { get; set; }
-        public string id { get; set; }
-        public string major { get; set; }
-        public int grade { get; set; }
-        public string etc { get; set; }
+        public string Name { get; set; }
+        public string Id { get; set; }
+        public string Major { get; set; }
+        public int Grade { get; set; }
+        public string Etc { get; set; }
     }
 
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Office"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" SizeChanged="Window_SizeChanged">
+        Title="MainWindow" Height="450" Width="800" SizeChanged="Window_SizeChanged" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -23,11 +23,11 @@
 
         <DataGrid Name="OfficeList" Grid.Column="1" Grid.RowSpan="3" ItemsSource="{Binding Rooms}" CanUserAddRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Binding="{Binding Path=name}" Width="130" />
-                <DataGridTextColumn Header="Width" Binding="{Binding Path=width}" Width="130" />
-                <DataGridTextColumn Header="Height" Binding="{Binding Path=height}" Width="180" />
-                <DataGridTextColumn Header="Area" Binding="{Binding Path=area}" Width="180" />
-                <DataGridTextColumn Header="Tiles" Binding="{Binding Path=tiles}" Width="180" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" Width="130" />
+                <DataGridTextColumn Header="Width" Binding="{Binding Path=Id}" Width="130" />
+                <DataGridTextColumn Header="Height" Binding="{Binding Path=Major}" Width="180" />
+                <DataGridTextColumn Header="Area" Binding="{Binding Path=Grade}" Width="180" />
+                <DataGridTextColumn Header="Tiles" Binding="{Binding Path=Etc}" Width="180" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
