@@ -1,0 +1,33 @@
+﻿<Window x:Class="Office.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Office"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Name="Office1" Text="{Binding Office1.Name}" Background="Aqua" />
+        <TextBlock Name="Office2" Text="{Binding Office2.Name}" Background="red" Grid.Row="1"/>
+        <TextBlock Name="Office3" Text="{Binding Office3.Name}" Background="Green" Grid.Row="2"/>
+
+        <DataGrid Name="Table" Grid.Column="1" Grid.RowSpan="3" ItemsSource="{Binding Rooms}" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Width" Binding="{Binding Width}"/>
+                <DataGridTextColumn Header="Height" Binding="{Binding Height}"/>
+                <DataGridTextColumn Header="TileCount" Binding="{Binding TileCount}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
