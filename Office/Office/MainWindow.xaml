@@ -24,8 +24,10 @@
         <DataGrid Name="OfficeList" Grid.Column="1" Grid.RowSpan="3" ItemsSource="{Binding Rooms}" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" Width="130" />
-                <DataGridTextColumn Header="Width" Binding="{Binding Path=Id}" Width="130" />
-                <DataGridTextColumn Header="Height" Binding="{Binding Path=Major}" Width="180" />
+                <DataGridTextColumn Header="Width" Binding="{Binding Path=Width}" Width="130" />
+                <DataGridTextColumn Header="Height" Binding="{Binding Path=Height}" Width="180" />
+                <DataGridTextColumn Header="Height" Binding="{Binding Path=Area}" Width="180" />
+                <DataGridTextColumn Header="Height" Binding="{Binding Path=Tiles}" Width="180" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
