@@ -21,6 +21,22 @@ namespace Office {
     /// Interaction logic for MainWindow.xaml 홍길동
     /// </summary>
     /// 
+
+
+    public class Data {
+        public string name { get; set; }
+        public string id { get; set; }
+        public string major { get; set; }
+        public int grade { get; set; }
+        public string etc { get; set; }
+    }
+
+
+
+
+
+
+
     public class Space {
         public TextBlock Room;  // obj
 
@@ -80,6 +96,15 @@ namespace Office {
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e) {
             refresh();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e) {
+            List<Data> list = new List<Data>();
+            list.Add(new Data { name = "이지원", id = "210651", major = "컴퓨터공학", grade = 1, etc = "" });
+            list.Add(new Data { name = "김현호", id = "210184", major = "컴퓨터공학", grade = 1, etc = "" });
+            list.Add(new Data { name = "강희진", id = "123141", major = "컴퓨터공학", grade = 1, etc = "" });
+            list.Add(new Data { name = "박서준", id = "001293", major = "컴퓨터공학", grade = 1, etc = "" });
+            list.Add(new Data { name = "강나연", id = "519232", major = "컴퓨터공학", grade = 1, etc = "" });
         }
     }
 }

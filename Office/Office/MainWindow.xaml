@@ -21,12 +21,13 @@
         <TextBlock Name="Office2" Text="{Binding Office2.Name}" Background="red" Grid.Row="1"/>
         <TextBlock Name="Office3" Text="{Binding Office3.Name}" Background="Green" Grid.Row="2"/>
 
-        <DataGrid Name="Table" Grid.Column="1" Grid.RowSpan="3" ItemsSource="{Binding Rooms}" CanUserAddRows="False">
+        <DataGrid Name="OfficeList" Grid.Column="1" Grid.RowSpan="3" ItemsSource="{Binding Rooms}" CanUserAddRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
-                <DataGridTextColumn Header="Width" Binding="{Binding Width}"/>
-                <DataGridTextColumn Header="Height" Binding="{Binding Height}"/>
-                <DataGridTextColumn Header="TileCount" Binding="{Binding TileCount}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Path=name}" Width="130" />
+                <DataGridTextColumn Header="Width" Binding="{Binding Path=width}" Width="130" />
+                <DataGridTextColumn Header="Height" Binding="{Binding Path=height}" Width="180" />
+                <DataGridTextColumn Header="Area" Binding="{Binding Path=area}" Width="180" />
+                <DataGridTextColumn Header="Tiles" Binding="{Binding Path=tiles}" Width="180" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
