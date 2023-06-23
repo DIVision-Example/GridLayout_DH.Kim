@@ -17,17 +17,17 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Rectangle Name="Office1" Background="Aqua" Grid.Row="0"/>
-        <Rectangle Name="Office2" Background="red" Grid.Row="1"/>
-        <Rectangle Name="Office3" Background="Green" Grid.Row="2"/>
+        <Rectangle Name="Office1" Fill="Aqua" Grid.Row="0"/>
+        <Rectangle Name="Office2" Fill="red" Grid.Row="1"/>
+        <Rectangle Name="Office3" Fill="Green" Grid.Row="2"/>
 
         <DataGrid Name="OfficeList" Grid.Column="1" Grid.RowSpan="3" ItemsSource="{Binding Rooms}" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}"/>
                 <DataGridTextColumn Header="Width" Binding="{Binding Path=Width}"/>
                 <DataGridTextColumn Header="Height" Binding="{Binding Path=Height}"/>
-                <DataGridTextColumn Header="Height" Binding="{Binding Path=Area}"/>
-                <DataGridTextColumn Header="Height" Binding="{Binding Path=Tiles}" />
+                <DataGridTextColumn Header="Area" Binding="{Binding Path=Area}"/>
+                <DataGridTextColumn Header="Tiles" Binding="{Binding Path=Tiles}" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

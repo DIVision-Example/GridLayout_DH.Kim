@@ -25,16 +25,16 @@ namespace Office {
     public partial class MainWindow : Window {        
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
-            List<Office> Rooms = new List<Office>();
-            Rooms.Add(new Office { Name = "사무실1", Width = 10, Height = 10, myRectangle = Office1});
-            Rooms.Add(new Office { Name = "사무실2", Width = 20, Height = 20, myRectangle = Office2 });
-            Rooms.Add(new Office { Name = "사무실3", Width = 30, Height = 30, myRectangle = Office3 });
+            List<Room> Rooms = new List<Room>();
+            Rooms.Add(new Room { Name = "사무실1", Width = 10, Height = 10, myRectangle = Office1});
+            Rooms.Add(new Room { Name = "사무실2", Width = 20, Height = 20, myRectangle = Office2 });
+            Rooms.Add(new Room { Name = "사무실3", Width = 30, Height = 30, myRectangle = Office3 });
 
             OfficeList.ItemsSource = Rooms;
         }
     }
 
-    public class Office {
+    public class Room {
         public string Name { get; set; }
         public double Width { get; set; }
         public double Height { get; set; }

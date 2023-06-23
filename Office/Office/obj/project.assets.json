@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\Office.csproj",
+      "projectUniqueName": "C:\\Users\\aweso\\Desktop\\Project\\T101_Office\\Office\\Office\\Office.csproj",
       "projectName": "Office",
-      "projectPath": "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\Office.csproj",
+      "projectPath": "C:\\Users\\aweso\\Desktop\\Project\\T101_Office\\Office\\Office\\Office.csproj",
       "packagesPath": "C:\\Users\\aweso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aweso\\Source\\Repos\\GridLayout_DH.Kim\\Office\\Office\\obj\\",
+      "outputPath": "C:\\Users\\aweso\\Desktop\\Project\\T101_Office\\Office\\Office\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
