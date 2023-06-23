@@ -17,9 +17,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Name="Office1" Text="{Binding Office1.Name}" Background="Aqua" />
-        <TextBlock Name="Office2" Text="{Binding Office2.Name}" Background="red" Grid.Row="1"/>
-        <TextBlock Name="Office3" Text="{Binding Office3.Name}" Background="Green" Grid.Row="2"/>
+        <Rectangle Name="Office1" Background="Aqua" Grid.Row="0"/>
+        <Rectangle Name="Office2" Background="red" Grid.Row="1"/>
+        <Rectangle Name="Office3" Background="Green" Grid.Row="2"/>
 
         <DataGrid Name="OfficeList" Grid.Column="1" Grid.RowSpan="3" ItemsSource="{Binding Rooms}" CanUserAddRows="False">
             <DataGrid.Columns>

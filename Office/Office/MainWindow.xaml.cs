@@ -22,6 +22,7 @@ namespace Office {
     /// </summary>
     /// 
 
+    /*
     public class Space {
         public TextBlock Room;  // obj
 
@@ -62,8 +63,10 @@ namespace Office {
             return 0;
         }
     }
+    */
 
     public partial class MainWindow : Window {
+        /*
         ObservableCollection<Space> Rooms { get; set; }
         public MainWindow() {
             InitializeComponent();
@@ -75,6 +78,7 @@ namespace Office {
             };
 
         }
+        */
         
         private void refresh() {
         }
