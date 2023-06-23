@@ -84,14 +84,16 @@ namespace Office {
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
-            List<Data> list = new List<Data>();
-            list.Add(new Data { Name = "이지원", Width = 10, Height = 10, Area = 100, Tiles = 10 });
-            list.Add(new Data { Name = "김동휘", Width = 20, Height = 10, Area = 100, Tiles = 10 });
-            list.Add(new Data { Name = "박연택", Width = 30, Height = 10, Area = 100, Tiles = 10 });
+            List<Office> Rooms = new List<Office>();
+            Rooms.Add(new Office { Name = "이지원", Width = 10, Height = 10, Area = 100, Tiles = 10 });
+            Rooms.Add(new Office { Name = "김동휘", Width = 20, Height = 10, Area = 100, Tiles = 10 });
+            Rooms.Add(new Office { Name = "박연택", Width = 30, Height = 10, Area = 100, Tiles = 10 });
+
+            OfficeList.ItemsSource = Rooms;
         }
     }
 
-    public class Data {
+    public class Office {
         public string Name { get; set; }
         public int Width { get; set; }
         public int Height { get; set; }
